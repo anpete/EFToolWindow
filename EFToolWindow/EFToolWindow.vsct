@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"
+              xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h" />
+  <Extern href="vsshlids.h" />
+  
+  <Include href="KnownImageIds.vsct" />
+  
+  <Commands package="PackageGuid">
+    <Buttons>
+      <Button guid="CommandSetGuid" id="MenuItemId" priority="0x0100" type="Button">
+        <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1" />
+        <Icon guid="ImageCatalogGuid" id="BusinessObjectDataSource" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>EF Diagnostics</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="PackageGuid" value="{42F9A7EF-B205-4FDA-991A-652372E128E5}" />
+    <GuidSymbol name="CommandSetGuid" value="{5EF1007E-8BCD-4599-8CDC-00162EAE8479}">
+      <IDSymbol name="MenuItemId" value="0x0101" />
+    </GuidSymbol>
+  </Symbols>
+
+</CommandTable>
